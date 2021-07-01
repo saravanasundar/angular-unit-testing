@@ -12,6 +12,7 @@ import { UserComponent } from './components/user/user.component';
 
 import { UserService } from './components/user/user.service';
 import { TitlecasePipe } from './titlecase.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,7 +30,8 @@ const routes: Routes = [
     ContactComponent,
     QuoteTextComponent,
     UserComponent,
-    TitlecasePipe
+    TitlecasePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
