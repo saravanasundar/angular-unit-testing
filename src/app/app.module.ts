@@ -11,6 +11,7 @@ import { QuoteTextComponent } from './components/quote-text/quote-text.component
 import { UserComponent } from './components/user/user.component';
 
 import { UserService } from './components/user/user.service';
+import { TitlecasePipe } from './titlecase.pipe';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
     AboutComponent,
     ContactComponent,
     QuoteTextComponent,
-    UserComponent
+    UserComponent,
+    TitlecasePipe
   ],
   imports: [
     BrowserModule,

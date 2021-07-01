@@ -13,7 +13,7 @@ describe('HomeComponent', () => {
 
   it(`should render @input`, async(() => {
     const fixture = TestBed.createComponent(QuoteTextComponent);
-    const app = fixture.debugElement.componentInstance;
+    const app = fixture.componentInstance;
     app.text = 'test quote';
     fixture.detectChanges();
     expect(fixture.nativeElement.querySelector('q').innerText).toEqual('test quote');

@@ -28,9 +28,9 @@ describe('ContactComponent', () => {
         expect(comp.users.length).toEqual(1);
     }));
 
-    it(`html should render one user`, async(() => {
+    it(`html should render one user`, () => {
         fixture.detectChanges();
         const el = fixture.nativeElement.querySelector('p');
         expect(el.innerText).toContain('user1');
-    }));
+    });
 });
